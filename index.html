@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- Import filtering script -->
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid" align="center">
+      
+      <h1 class="container display-1">
+        <img src="https://librehealth.io/img/logo.png" alt="LibreHealth logo" height="100px" class="hidden-xs hidden-sm">
+      <p class="lead">A beginner's guide to LibreHealth</div>
+      </h1>
+
+    </div>
+    <div class="container">
+      <div align="center">
+        <span class="lead">Filter by:</span>
+        <button type="button" class="btn btn-success btn-xs btn-tag">php</button>
+        <button type="button" class="btn btn-danger btn-xs btn-tag">javascript</button>
+        <button type="button" class="btn btn-info btn-xs btn-tag">mysql</button>
+        <button type="button" style="background-color: #9962e0; color: #ffffff;" class="btn btn-xs btn-tag">CSS</button>
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div id="librehealth-project-1" class="card offset-1 card-inverse librehealth-card" style="background-color:#f49234; width: 20rem; margin: auto;">
+        <!--<img class="card-header text-center lead" src="" alt="LibreEHR">-->
+        <div class="card-header">
+          <h4>LibreHealth EHR</h4>
+        </div>
+        <div class="card-block">
+          <!--<h4 class="card-title">LibreEHR</h4>-->
+          <p class="card-text">LibreHealth EHR is a project designed to be "easy to use" and "out of the box," so those with creative minds, capability in design, and skillsets in implementing components would be most efficient. For more information refer to "Read More"</p>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#EHRModal">Read More</button>
+        </div>
+        <div class="card-footer">
+          <span>Languages: </span>
+          <span class="badge badge-success">php</span>
+          <span class="badge badge-danger">javascript</span>
+          <span class="badge badge-info">mysql</span>
+        </div>
+      </div>
+      <div id="librehealth-project-2" class="card offset-1 card-inverse librehealth-card" style="background-color:#f49234; width: 20rem; margin: auto">
+        <!--<img class="card-header text-center lead" src="" alt="LibreEHR">-->
+        <div class="card-header">
+          <h4>LibreHealth Radiology</h4>
+        </div>
+        <div class="card-block">
+          <!--<h4 class="card-title">LibreEHR</h4>-->
+          <p class="card-text">LibreHealth Radiology is a modified version of Toolkit with additional components for use alongside imaging proffesionals. This project requires creativity to design and implement new components. For more information refer to "Read More." </p>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#RadiologyModal">Read More</button>
+        </div>
+        <div class="card-footer">
+          <span>Languages: </span>
+          <span class="badge badge-success">php</span>
+          <span class="badge badge-danger">javascript</span>
+          <span class="badge badge-info">mysql</span>
+          <span style="background-color: #9962e0; color: #ffffff;" class="badge">CSS</span>
+        </div>
+      </div>
+      <div id="librehealth-project-3" class="card offset-1 card-inverse librehealth-card" style="background-color:#f49234; width: 20rem; margin: auto">
+        <!--<img class="card-header text-center lead" src="" alt="LibreEHR">-->
+        <div class="card-header">
+          <h4>LibreHealth Toolkit</h4>
+        </div>
+        <div class="card-block">
+          <!--<h4 class="card-title">LibreEHR</h4>-->
+          <p class="card-text">LibreHealth Toolkit is the functional and foundational API for LibreHealth Radiology. It is suited for those who have had experience with code. This project requires the ability to design and implement new components. For more information refer to "Read More."</p>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#ToolkitModal">Read More</button>
+        </div>
+        <div class="card-footer">
+          <span>Languages: </span>
+          <span class="badge badge-success">php</span>
+          <span class="badge badge-danger">javascript</span>
+          <span class="badge badge-info">mysql</span>
+          <span style="background-color: #9962e0; color: #ffffff;" class="badge">CSS</span>
+        </div>
+      </div>
+    </div>
+    <!-- EHR Modal -->
+    <div class="modal fade" id="EHRModal" tabindex="-1" role="dialog" aria-labelledby="EHRModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">LibreHealth EHR</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>LibreHealth EHR focuses on the patient experience, so user input from beginner's is key to the success of an electronic health record. LibreHealth EHR is run by a mysql server alongside an apache server, so you will be using the project on your own personal server. If you are interested in this branch first you should complete the task called "Become a part of the community" then move onto setup for Windows or your preferred system.</p>
+            <a href="https://gitlab.com/librehealth/gci/issues/72" target="_blank">Become a part of the community</a>
+            <br/>
+            <a href="https://gitlab.com/librehealth/gci/issues/87/" target="_blank">LibreHealth EHR Setup (Windows)</a>
+            <br/>
+            <a href="https://gitlab.com/librehealth/gci/issues/86" target="_blank">LibreHealth EHR Setup (Linux)</a>
+            <br>
+            <a href="https://gitlab.com/librehealth/gci/issues/91" target="_blank">LibreHealth EHR Setup (Mac)</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Radiology Modal -->
+    <div class="modal fade" id="RadiologyModal" tabindex="-1" role="dialog" aria-labelledby="RadiologyModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">LibreHealth Radiology</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>LibreHealth Radiology requires a somewhat good understanding of programming in order to create new components to better the existing codebase, or to enhance the user interface from the patient dashboard to the design of the website. LibreHealth Radiology is a project that uses an enhanced version of LibreHealth Toolkit to eventually design a foundation for Radiologists and other imaging specialists to use electronically. If you are interested in this branch you should first do the task called "Become a part of the community" then follow up with the setup of Radiology for Windows or your preffered system.</p>
+            <a href="https://gitlab.com/librehealth/gci/issues/72" target="_blank">Become a part of the community</a>
+            <br/>
+            <a href="https://gitlab.com/librehealth/gci/issues/53" target="_blank">LibreHealth Radiology Setup</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- Toolkit -->
+    <div class="modal fade" id="ToolkitModal" tabindex="-1" role="dialog" aria-labelledby="ToolkitModal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">LibreHealth Toolkit</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>LibreHealth Toolkit requires extensive coding to create new components from remodeling the patient dashboard to enhance user experience to changing the layout or themes of a tab such as fixing a container to fit when a screen is shrinked. LibreHealth Toolkit can also be used to design new wireframes for the website and patient experience. If you are interested in this branch you should first do the task called "Become a part of the community" then follow up with creating a video for the setup of LibreHealth Toolkit on Windows or your preferred system.</p>
+            <a href="https://codein.withgoogle.com/tasks/5974232355831808/" target="_blank">Become a part of the community</a>
+            <br/>
+            <a href="https://gitlab.com/librehealth/gci/issues/6" target="_blank">LibreHealth Toolkit Setup Video (Windows)</a>
+            <br/>
+            <a href="https://gitlab.com/librehealth/gci/issues/24" target="_blank">LibreHealth Toolkit Setup Video (Linux)</a>
+            <br/>
+            <a href="https://gitlab.com/librehealth/gci/issues/13" target="_blank">LibreHealth Toolkit Setup Video (Mac)</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
