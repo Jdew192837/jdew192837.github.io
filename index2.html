@@ -24,6 +24,11 @@
         margin: 0 auto;
       }
     </style>
+    <style type="text/css">
+      .hidden {
+        display: none;
+      }
+    </style>
   </head>
   <body style="background-color:#CDCEC9">
     <div class="jumbotron jumbotron-fluid" align="center">
@@ -37,6 +42,7 @@
     <div class="container">
       <div align="center">
         <span class="lead">Filter by:</span>
+        <button type="button" class="btn btn-primary btn-xs btn-tag">All</button>
         <button type="button" class="btn btn-success btn-xs btn-tag">php</button>
         <button type="button" class="btn btn-danger btn-xs btn-tag">JS</button>
         <button type="button" class="btn btn-info btn-xs btn-tag">mysql</button>
@@ -61,6 +67,7 @@
         </div>
         <div class="card-footer">
           <span>Languages: </span>
+          <span class="badge badge-primary hidden">All</span>
           <span class="badge badge-success">php</span>
           <span class="badge badge-danger">JS</span>
           <span class="badge badge-info">mysql</span>
@@ -81,6 +88,7 @@
         </div>
         <div class="card-footer">
           <span>Languages: </span>
+          <span class="badge badge-primary hidden">All</span>
           <span class="badge badge-danger">JS</span>
           <span style="background-color: #FF69BE; color: #ffffff;" class="badge">Java</span>
           <span class="badge badge-info">mysql</span>
@@ -100,6 +108,7 @@
         </div>
         <div class="card-footer">
           <span>Languages: </span>
+          <span class="badge badge-primary hidden">All</span>
           <span class="badge badge-danger">JS</span>
           <span class="badge badge-info">mysql</span>
           <span style="background-color: #9962e0; color: #ffffff;" class="badge">CSS</span>
