@@ -1,4 +1,4 @@
-// JQuery
+// JQuery + Jonathan's Edit
 $(document).ready(function() {
   // Whenever an element with id is clicked, run the code
   console.log("Test");
